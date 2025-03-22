@@ -1,6 +1,6 @@
 # Proyecto sobre El trastorno por déficit de atención e hiperactividad (TDAH) y Relaciones Sociales 
 
-<img src="IMAGES/SI.jpg" alt="Descripción de la imagen" width="400">
+<img src="INICIO.jpg" alt="Descripción de la imagen" width="100">
 
 # ¿Cuál es la problemática?
 Las personas tienen desinformación e ignorancia, ya que presentan etiquetas erróneas, donde buscan adjetivos sin conocer dicho trastorno mental. Muchas veces sentirse aceptado y pertenecer a un grupo es una necesidad básica en los seres humanos.
