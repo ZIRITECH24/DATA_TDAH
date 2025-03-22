@@ -1,7 +1,7 @@
-# Proyecto sobre El trastorno por déficit de atención e hiperactividad (TDAH) y Relaciones Sociales 
-
-<img src="INICIO.jpg" alt="Descripción de la imagen" width="100">
-
+<p align="center">
+  <img src="IMAGES/INICIO.jpg" alt="Descripción de la imagen" width="800">
+</p>
+  
 # ¿Cuál es la problemática?
 Las personas tienen desinformación e ignorancia, ya que presentan etiquetas erróneas, donde buscan adjetivos sin conocer dicho trastorno mental. Muchas veces sentirse aceptado y pertenecer a un grupo es una necesidad básica en los seres humanos.
 Sin embargo, en el momento que se cuestiona este tipo de trastorno mental, interfiere en el desarrollo personal y emocional. La desinformación aleja el acceso a un tratamiento eficiente.
@@ -9,7 +9,16 @@ Sin embargo, en el momento que se cuestiona este tipo de trastorno mental, inter
 # ¿Cómo se resolvió?
 A través de los datos que se identificaron y analizaron, se creó una concientización, ya que se informó sobre estos tipos de trastornos mentales. Esto puede ayudar a disimular el miedo y la ignorancia asociado con los tipos de trastornos mentales.Para que así, se pueda tener una comunicación abiertamente, sin barreras sociales, la falta de acceso a la atención médica adecuada y la discriminación del empleo, vivienda y cualquier otro elemento.
 
+<p align="center">
+  <img src="IMAGES/POR QUÉ.jpg" alt="Descripción de la imagen" width="600">
+</p>
+
 # Conclusión
+
+<p align="center">
+  <img src="IMAGES/RESULTADO.jpg" alt="Imagen 1" width="400" style="margin-right: 20px;">
+  <img src="IMAGES/CÓDIGO.jpg" alt="Imagen 2" width="400">
+</p>
 
 # Cosas positivas dentro del proyecto.
 
