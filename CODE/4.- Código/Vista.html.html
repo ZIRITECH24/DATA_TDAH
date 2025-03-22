@@ -1,0 +1,273 @@
+<meta charset="UTF-8">
+<h1>Estadisticas TDAH 2020</h1>
+<h3>Población con discapacidad , con limitación en la actividad cotidiana y con algún problema o condición mental, por entidad federativa y grupo quinquenal de edad según sexo</h3>
+
+
+<script>
+    //funciones
+    function imprimir(frase){
+        document.write(frase);
+    }
+
+    function espacio(n){
+        switch (n){
+
+            case 1: document.write("<br>");
+            break;
+           
+            case 2: document.write("<br><br>");
+            break;
+
+            case 3: document.write("<br><br><br>");
+            break;
+
+            case 4: document.write("<br><br><br><br>");
+            break;
+
+            case 5: document.write("<br><br><br><br><br>");
+            break;
+
+        }
+
+    }
+
+    function numeroMayor(array){
+       resultado = Math.max(...array);
+       return resultado
+    }
+    //funciones/
+
+    //objetos
+    const Aguascalientes = new Object();
+    Aguascalientes.name = 'Aguascalientes';
+    Aguascalientes .totalCasos = 165482;
+
+    const Baja_California = new Object();
+    Baja_California.name = 'Baja_California';
+    Baja_California .totalCasos = 361269;
+
+    const Baja_California_Sur = new Object();
+    Baja_California_Sur.name = 'Baja_California_Sur';
+    Baja_California_Sur .totalCasos = 90233;
+
+    const Campeche = new Object();
+    Campeche.name = 'Campeche';
+    Campeche .totalCasos = 112956;
+
+    const Coahuila_de_Zaragoza = new Object();
+    Coahuila_de_Zaragoza.name = 'Coahuila_de_Zaragoza';
+    Coahuila_de_Zaragoza .totalCasos = 302543;
+
+    const Colima = new Object();
+    Colima.name = 'Colima';
+    Colima .totalCasos = 87325;
+
+    const Chiapas = new Object();
+    Chiapas.name = 'Chiapas';
+    Chiapas .totalCasos = 420261;
+
+    const Chihuahua = new Object();
+    Chihuahua.name = 'Chihuahua';
+    Chihuahua .totalCasos = 364638;
+
+    const Ciudad_de_Mexico = new Object();
+    Ciudad_de_Mexico.name = 'Ciudad_de_Mexico';
+    Ciudad_de_Mexico .totalCasos = 1141218;
+
+    const Durango = new Object();
+    Durango.name = 'Durango';
+    Durango .totalCasos = 217850;
+
+    const Guanajuato = new Object();
+    Guanajuato.name = 'Guanajuato';
+    Guanajuato .totalCasos = 613749;
+
+    const Guerrero = new Object();
+    Guerrero.name = 'Guerrero';
+    Guerrero .totalCasos = 437069;
+
+    const Hidalgo = new Object();
+    Hidalgo.name = 'Hidalgo';
+    Hidalgo .totalCasos = 413238;
+
+    const Jalisco = new Object();
+    Jalisco.name = 'Jalisco';
+    Jalisco .totalCasos = 826012;
+
+    const Michoacan_de_Ocampo = new Object();
+    Michoacan_de_Ocampo.name = 'Michoacan_de_Ocampo';
+    Michoacan_de_Ocampo .totalCasos = 544104;
+
+    const Morelos = new Object();
+    Morelos.name = 'Morelos';
+    Morelos .totalCasos = 256802;
+
+    const Nayarit = new Object();
+    Nayarit.name = 'Nayarit';
+    Nayarit .totalCasos = 156741;
+
+    const Nuevo_Leon = new Object();
+    Nuevo_Leon.name = 'Nuevo_Leon';
+    Nuevo_Leon .totalCasos = 551374;
+
+    const Oaxaca = new Object();
+    Oaxaca.name = 'Oaxaca';
+    Oaxaca .totalCasos = 552447;
+
+    const Puebla = new Object();
+    Puebla.name = 'Puebla';
+    Puebla .totalCasos = 686290;
+
+    const Queretaro = new Object();
+    Queretaro.name = 'Queretaro';
+    Queretaro .totalCasos = 244793;
+
+    const Quintana_Roo = new Object();
+    Quintana_Roo.name = 'Quintana_Roo';
+    Quintana_Roo .totalCasos = 164117;
+
+    const San_Luis_Potosi = new Object();
+    San_Luis_Potosi.name = 'San_Luis_Potosi';
+    San_Luis_Potosi .totalCasos = 335739;
+
+    const Sinaloa = new Object();
+    Sinaloa.name = 'Sinaloa';
+    Sinaloa .totalCasos = 323396;
+
+    const Sonora = new Object();
+    Sonora.name = 'Sonora';
+    Sonora .totalCasos = 317996;
+
+    const Tabasco = new Object();
+    Tabasco.name = 'Tabasco';
+    Tabasco .totalCasos = 255925;
+
+    const Tamaulipas = new Object();
+    Tamaulipas.name = 'Tamaulipas';
+    Tamaulipas .totalCasos = 386226;
+
+    const Tlaxcala = new Object();
+    Tlaxcala.name = 'Tlaxcala';
+    Tlaxcala .totalCasos = 143111;
+
+    const Veracruz_de_Ignacio_de_la_Llave = new Object();
+    Veracruz_de_Ignacio_de_la_Llave.name = 'Veracruz_de_Ignacio_de_la_Llave';
+    Veracruz_de_Ignacio_de_la_Llave .totalCasos = 1030435;
+
+    const Yucatan = new Object();
+    Yucatan.name = 'Yucatan';
+    Yucatan .totalCasos = 272009;
+
+    const Zacatecas = new Object();
+    Zacatecas.name = 'Zacatecas';
+    Zacatecas .totalCasos = 200250;
+
+    const Estados_Unidos_Mexicanos = {
+    name: "Estados Unidos Mexicanos",
+    total_0_a_4: { name: "0 a 4 años", value: 227820 },
+    total_5_a_9: { name: "5 a 9 años", value: 427779 },
+    total_10_a_14: { name: "10 a 14 años", value: 577238 },
+    total_15_a_19: { name: "15 a 19 años", value: 618451 },
+    total_20_a_24: { name: "20 a 24 años", value: 617692 },
+    total_25_a_29: { name: "25 a 29 años", value: 613642 },
+    total_30_a_34: { name: "30 a 34 años", value: 620885 },
+    total_35_a_39: { name: "35 a 39 años", value: 661806 },
+    total_40_a_44: { name: "40 a 44 años", value: 884845 },
+    total_45_a_49: { name: "45 a 49 años", value: 1210777 },
+    total_50_a_54: { name: "50 a 54 años", value: 1378294 },
+    total_55_a_59: { name: "55 a 59 años", value: 1309677 },
+    total_60_a_64: { name: "60 a 64 años", value: 1311751 },
+    total_65_a_69: { name: "65 a 69 años", value: 1143288 },
+    total_70_a_74: { name: "70 a 74 años", value: 928443 },
+    total_75_a_79: { name: "75 a 79 años", value: 670391 },
+    total_80_a_84: { name: "80 a 84 años", value: 426428 },
+    total_85_y_mas: { name: "85 años y más", value: 304979 },
+    total_no_especificado: { name: "No especificado", value: 262 },
+    total_hombres: { name: "Hombres", value: 6438319},
+    total_mujeres: { name: "Mujeres", value: 7496129 },
+    };
+    //objetos/
+
+    // caso 1: menciona la entidad federativa con mayores casos de limitacion mental.
+
+    const entidadesFederativasTotal = [Aguascalientes.totalCasos, Baja_California.totalCasos, Baja_California_Sur.totalCasos, Campeche.totalCasos, Coahuila_de_Zaragoza.totalCasos, Colima.totalCasos, Chiapas.totalCasos, Chihuahua.totalCasos, Ciudad_de_Mexico.totalCasos, Durango.totalCasos, Guanajuato.totalCasos, Guerrero.totalCasos, Hidalgo.totalCasos, Jalisco.totalCasos, Michoacan_de_Ocampo.totalCasos, Morelos.totalCasos, Nayarit.totalCasos, Nuevo_Leon.totalCasos, Oaxaca.totalCasos, Puebla.totalCasos, Queretaro.totalCasos, Quintana_Roo.totalCasos, San_Luis_Potosi.totalCasos, Sinaloa.totalCasos, Sonora.totalCasos, Tabasco.totalCasos, Tamaulipas.totalCasos, Tlaxcala.totalCasos, Veracruz_de_Ignacio_de_la_Llave.totalCasos, Yucatan.totalCasos, Zacatecas.totalCasos];
+    const entidadesFederativas = [Aguascalientes, Baja_California, Baja_California_Sur, Campeche, Coahuila_de_Zaragoza,Colima, Chiapas,Chihuahua, Ciudad_de_Mexico, Durango, Guanajuato, Guerrero, Hidalgo, Jalisco, Michoacan_de_Ocampo, Morelos, Nayarit, Nuevo_Leon, Oaxaca, Puebla, Queretaro, Quintana_Roo, San_Luis_Potosi, Sinaloa, Sonora, Tabasco, Tamaulipas, Tlaxcala, Veracruz_de_Ignacio_de_la_Llave, Yucatan, Zacatecas];
+
+        let mayorMostrar = numeroMayor(entidadesFederativasTotal);
+
+    for (var i = 0; i < entidadesFederativas.length; i++){
+
+        if(entidadesFederativas[i].totalCasos === mayorMostrar){
+            imprimir("La entidad federativa con mayores casos de limitacion mental es: " + entidadesFederativas[i].name);
+
+        }
+    }
+        espacio(1);
+        imprimir("Numero de casos de limitacion mental: ");
+        imprimir(mayorMostrar);
+        espacio(2);
+        imprimir("<hr/>")
+
+    // caso 2: cual es la edad mas propensa para tener una limitacion mental?
+    const edades = [
+    Estados_Unidos_Mexicanos.total_0_a_4.value,
+    Estados_Unidos_Mexicanos.total_5_a_9.value,
+    Estados_Unidos_Mexicanos.total_10_a_14.value,
+    Estados_Unidos_Mexicanos.total_15_a_19.value,
+    Estados_Unidos_Mexicanos.total_20_a_24.value,
+    Estados_Unidos_Mexicanos.total_25_a_29.value,
+    Estados_Unidos_Mexicanos.total_30_a_34.value,
+    Estados_Unidos_Mexicanos.total_35_a_39.value,
+    Estados_Unidos_Mexicanos.total_40_a_44.value,
+    Estados_Unidos_Mexicanos.total_45_a_49.value,
+    Estados_Unidos_Mexicanos.total_50_a_54.value,
+    Estados_Unidos_Mexicanos.total_55_a_59.value,
+    Estados_Unidos_Mexicanos.total_60_a_64.value,
+    Estados_Unidos_Mexicanos.total_65_a_69.value,
+    Estados_Unidos_Mexicanos.total_70_a_74.value,
+    Estados_Unidos_Mexicanos.total_75_a_79.value,
+    Estados_Unidos_Mexicanos.total_80_a_84.value,
+    Estados_Unidos_Mexicanos.total_85_y_mas.value,
+    Estados_Unidos_Mexicanos.total_no_especificado.value,
+    ];
+    
+    const edadesName = [Estados_Unidos_Mexicanos.total_0_a_4, Estados_Unidos_Mexicanos.total_5_a_9, Estados_Unidos_Mexicanos.total_10_a_14, Estados_Unidos_Mexicanos.total_15_a_19,Estados_Unidos_Mexicanos.total_20_a_24, Estados_Unidos_Mexicanos.total_25_a_29,Estados_Unidos_Mexicanos.total_30_a_34,Estados_Unidos_Mexicanos.total_35_a_39,Estados_Unidos_Mexicanos.total_40_a_44,Estados_Unidos_Mexicanos.total_45_a_49,Estados_Unidos_Mexicanos.total_50_a_54,Estados_Unidos_Mexicanos.total_55_a_59,Estados_Unidos_Mexicanos.total_60_a_64,Estados_Unidos_Mexicanos.total_65_a_69,Estados_Unidos_Mexicanos.total_70_a_74,Estados_Unidos_Mexicanos.total_75_a_79,Estados_Unidos_Mexicanos.total_80_a_84,Estados_Unidos_Mexicanos.total_85_y_mas,Estados_Unidos_Mexicanos.total_no_especificado];
+
+        let mayorEdades = numeroMayor(edades);
+
+    for (var i = 0; i < edadesName.length; i++){
+
+        if(edadesName[i].value === mayorEdades){
+            imprimir("La edad mas propensa para tener una limitacion mental es: " + edadesName[i].name);
+
+        }
+    }
+        espacio(1);
+        imprimir("Numero de personas con limitacion mental de esta edad: ");
+        imprimir(mayorEdades);
+        espacio(2);
+        imprimir("<hr/>")
+
+        
+    // caso 3: se ve reflejado mas en mujeres o en hombres
+
+    const sexoMayor = [Estados_Unidos_Mexicanos.total_hombres.value, Estados_Unidos_Mexicanos.total_mujeres.value];
+    const sexoMayorName = [Estados_Unidos_Mexicanos.total_hombres, Estados_Unidos_Mexicanos.total_mujeres];
+
+    let sexoMayorGuardado = numeroMayor(sexoMayor);
+
+    for (var i = 0; i < sexoMayorName.length; i++){
+
+        if(sexoMayorName[i].value === sexoMayorGuardado){
+            imprimir("El sexo con mayor numero de casos es: " + sexoMayorName[i].name);
+
+        }
+    }
+        espacio(1);
+        imprimir("Numero de personas con limitacion mental de este sexo: ");
+        imprimir(sexoMayorGuardado);
+        espacio(2);
+        imprimir("<hr/>")
+
+
+</script>
